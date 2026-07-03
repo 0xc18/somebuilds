@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - run: pipx run uv download.py
-      - run: pipx run uv build.py
+      - run: pipx run uv run download.py
+      - run: pipx run uv run build.py
       - uses: actions/upload-artifact@v4
         with:
           name: wheels
