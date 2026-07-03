@@ -15,6 +15,7 @@ for i in os.listdir("output"):
             "--output-dir",
             "../../wheelhouse",
             "--archs",
-            "arm64_v8",
+            "arm64_v8a",
         ],
     )
+    os.chdir("../../")
